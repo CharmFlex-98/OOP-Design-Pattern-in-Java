@@ -1,4 +1,4 @@
-package com.company;
+package com.company.strategy_pattern;
 
 import com.company.strategy_pattern.Animal;
 import com.company.strategy_pattern.Kangaroo;
