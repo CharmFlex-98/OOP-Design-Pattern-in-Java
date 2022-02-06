@@ -5,6 +5,7 @@ public class ComputerDisplay implements IObserver{
 
     public ComputerDisplay(TempData tempData) {
         this.tempData = tempData;
+        this.tempData.add(this);
     }
 
     @Override

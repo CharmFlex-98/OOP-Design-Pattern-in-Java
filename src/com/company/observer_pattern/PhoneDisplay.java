@@ -5,6 +5,7 @@ public class PhoneDisplay implements IObserver{
 
     public PhoneDisplay(TempData tempData) {
         this.tempData = tempData;
+        this.tempData.add(this);
     }
 
     @Override

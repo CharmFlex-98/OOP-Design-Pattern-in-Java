@@ -9,9 +9,10 @@ public class Main {
 
     public static void main(String[] args) {
         TempData tempData = new TempData();
-        tempData.add(new ComputerDisplay(tempData));
-       tempData.add(new PhoneDisplay(tempData));
+        ComputerDisplay computerDisplay = new ComputerDisplay(tempData);
+        PhoneDisplay phoneDisplay = new PhoneDisplay(tempData);
 
         tempData.setTemperature(50);
+        tempData.setTemperature(100);
     }
 }
