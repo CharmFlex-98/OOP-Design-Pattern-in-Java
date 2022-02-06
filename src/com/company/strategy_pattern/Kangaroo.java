@@ -4,6 +4,6 @@ public class Kangaroo extends Animal{
 
     public Kangaroo() {
         this.attackBehaviour = new SwordAttack();
-        this.runBehaviour = new StraightRun();
+        this.runBehaviour = new JumpRun();
     }
 }

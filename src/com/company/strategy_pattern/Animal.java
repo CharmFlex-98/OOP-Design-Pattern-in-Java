@@ -4,6 +4,14 @@ public abstract class Animal {
     public AttackBehaviour attackBehaviour;
     public RunBehaviour runBehaviour;
 
+    public void attack() {
+        attackBehaviour.attack();
+    }
+
+    public void run() {
+        runBehaviour.run();
+    }
+
     public void setAttackBehaviour(AttackBehaviour attackBehaviour) {
         this.attackBehaviour = attackBehaviour;
     }

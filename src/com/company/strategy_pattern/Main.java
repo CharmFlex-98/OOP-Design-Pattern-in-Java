@@ -9,14 +9,18 @@ public class Main {
 
     public static void main(String[] args) {
         Animal panda = new Panda();
-        panda.attackBehaviour.attack();
-        panda.runBehaviour.run();
+        panda.attack();
+        panda.run();
 
         Animal kangaroo = new Kangaroo();
-        kangaroo.attackBehaviour.attack();
-        kangaroo.runBehaviour.run();
+        kangaroo.attack();
+        kangaroo.run();
+
 
         panda.setAttackBehaviour(new SwordAttack());
-        panda.attackBehaviour.attack();
+        panda.attack();
+
+        kangaroo.setRunBehaviour(new StraightRun());
+        kangaroo.run();
     }
 }
