@@ -9,6 +9,6 @@ public class Main {
 
        WeaponFactory birdWeaponFactory= new BirdWeaponFactory();
        birdWeaponFactory.equipWeapon("sword");
-       birdWeaponFactory.equipWeapon("sword");
+       birdWeaponFactory.equipWeapon("hammer");
     }
 }
